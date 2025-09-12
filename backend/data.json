@@ -1,0 +1,71 @@
+{
+  "products": [
+    {
+      "id": 1757174156869,
+      "name": "rice",
+      "description": "white",
+      "category": "starch",
+      "price": 20,
+      "quantity": 12
+    },
+    {
+      "id": 1757174234646,
+      "name": "potato",
+      "description": "sweet",
+      "category": "starch",
+      "price": 15,
+      "quantity": 5
+    }
+  ],
+  "sales": [
+    {
+      "id": 1757610919200,
+      "productId": 1757174156869,
+      "quantity": 3,
+      "date": "2025-09-11T17:15:19.200Z"
+    },
+    {
+      "id": 1757613520317,
+      "productId": 1757174234646,
+      "quantity": 1,
+      "date": "2025-09-11T17:58:40.317Z"
+    },
+    {
+      "id": 1757613520820,
+      "productId": 1757174234646,
+      "quantity": 1,
+      "date": "2025-09-11T17:58:40.820Z"
+    },
+    {
+      "id": 1757613521066,
+      "productId": 1757174234646,
+      "quantity": 1,
+      "date": "2025-09-11T17:58:41.066Z"
+    },
+    {
+      "id": 1757613521260,
+      "productId": 1757174234646,
+      "quantity": 1,
+      "date": "2025-09-11T17:58:41.260Z"
+    },
+    {
+      "id": 1757613521450,
+      "productId": 1757174234646,
+      "quantity": 1,
+      "date": "2025-09-11T17:58:41.450Z"
+    }
+  ],
+  "customers": [
+    {
+      "id": 1757611131736,
+      "name": "walkin",
+      "email": "ghhh.com"
+    },
+    {
+      "id": 1757613325108,
+      "name": "rice",
+      "email": "dthdhrf"
+    }
+  ],
+  "reports": []
+}
