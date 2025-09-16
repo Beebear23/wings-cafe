@@ -3,30 +3,29 @@ import Inventory from "./Inventory";
 import Sales from "./Sales";
 import Customers from "./Customers";
 import Reports from "./Reports";
-import pic from "./wings.jpg";
-import "./App.css"; // Import the CSS file
+import Dashboard from "./Dashboard";
 
 function App() {
-  const [module, setModule] = useState("inventory");
+  const [module, setModule] = useState("dashboard"); // show dashboard by default
 
   return (
-    <div className="container">
-      <header className="app-header">
-        <img src={pic} alt="Wings.jpg" className="logo" />
-        <h1>Wings Cafe Inventory</h1>
-      </header>
-
+    <div className="app-container">
+      <h1>Wings Cafe Inventory</h1>
       <nav className="nav-buttons">
+        <button onClick={() => setModule("dashboard")}>Dashboard</button>
         <button onClick={() => setModule("inventory")}>Inventory</button>
         <button onClick={() => setModule("sales")}>Sales</button>
         <button onClick={() => setModule("customers")}>Customers</button>
         <button onClick={() => setModule("reports")}>Reports</button>
       </nav>
 
-      {module === "inventory" && <Inventory />}
-      {module === "sales" && <Sales />}
-      {module === "customers" && <Customers />}
-      {module === "reports" && <Reports />}
+      <div className="module-view">
+        {module === "dashboard" && <Dashboard />}
+        {module === "inventory" && <Inventory />}
+        {module === "sales" && <Sales />}
+        {module === "customers" && <Customers />}
+        {module === "reports" && <Reports />}
+      </div>
     </div>
   );
 }
